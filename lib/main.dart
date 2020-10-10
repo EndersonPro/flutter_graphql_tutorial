@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_graph_subscription/page/create_book_page.dart';
 import 'package:flutter_graph_subscription/page/home_page.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 
@@ -19,8 +18,8 @@ class MyApp extends StatelessWidget {
       client: client,
       child: MaterialApp(
         title: 'Material App',
-        // home: HomePage(),
-        home: CreateBookPage(),
+        debugShowCheckedModeBanner: false,
+        home: HomePage(),
       ),
     );
   }
